@@ -8,7 +8,6 @@
 ## Instalação e Execução
 
 1. Clone o repositório:
-
    ```bash
    git clone https://github.com/MaxwelLopes/Teste.git
 
@@ -18,9 +17,17 @@
 
 3. Instale as dependências:
    ```bash
-   cd npm install
+   npm install
+   ```bash
+   npm install -g sequelize-cli
 
-4. Inicie o servidor:
+4. Execute as migrações para criar o banco de dados e as tabelas: 
+   ```bash
+   npx sequelize-cli db:migrate
+
+5. Inicie o servidor:
    ```bash
    npm start run
+
+6. O servidor estará disponível em http://localhost:3000
 
