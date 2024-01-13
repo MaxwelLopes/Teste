@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: auto;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }  
+
+        .logout {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #4caf50;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .logout:hover {
+            color: #45a049;
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body class="container">
-
-<header>
-    
-</header>
-
+<body>
 <main>
-    <div class="jumbotron">
-        <h1>This is great</h1>
-        <p>Welcome to templating using EJS</p>
+    <div class="box">
+        <h1>Seja muito bem-vindo, <%= user.name %>!</h1>
+        <p>Email: <%= user.email %></p>
+        <!-- Adicione mais informações ou elementos visuais conforme necessário -->
+        <a href="/logout" class="logout">Sair</a>
     </div>
-    <ul>
-        <% items.forEach(function(item) { %>
-          <li><%= item.name %></li>
-        <% }); %>
-      </ul>
 </main>
-
-<footer>
-
-</footer>
 
 </body>
 </html>
-<style>
-    body{
-        background-color: rgb(220, 215, 250);
-    }
-</style>
