@@ -1,4 +1,4 @@
-# Teste - Fluxo de Login com Express, Sequelize e SQLite
+# Teste - Fluxo de Login com Express
 
 ## Pré-requisitos
 
