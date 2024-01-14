@@ -17,7 +17,7 @@
 
 3. Instale as dependências:
    ```bash
-   npm install -g sequelize-cli && npm install
+   npm install 
 
 4. Execute as migrações para criar o banco de dados e as tabelas: 
    ```bash
